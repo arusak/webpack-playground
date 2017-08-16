@@ -1,9 +1,11 @@
-var add = require('./add');
+import add from './add';
 
-module.exports = function multiply(n, p) {
-    var result = 0;
-    for (var i = 0; i < p; i++) {
+const multiply = (n, p) => {
+    let result = 0;
+    for (let i = 0; i < p; i++) {
         add(result, n);
     }
     return result;
 };
+
+export default multiply;

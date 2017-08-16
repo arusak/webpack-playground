@@ -1,8 +1,8 @@
-var add = require('./add');
-var multiply = require('./multiply');
+import add from './add';
+import multiply from './multiply';
 
-var x = 5;
-var y = 13;
+const x = 5;
+const y = 13;
 
-console.log(x + ' + ' + y + ' = ' + add(x, y));
-console.log(x + ' × ' + y + ' = ' + multiply(x, y));
+console.log(`${x} + ${y} = ${add(x, y)}`);
+console.log(`${x} × ${y} = ${multiply(x, y)}`);
